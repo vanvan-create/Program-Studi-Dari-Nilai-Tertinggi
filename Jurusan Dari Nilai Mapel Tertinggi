@@ -1,0 +1,246 @@
+
+/* ===================================
+   EDUPATH TKA - FUTURISTIC BLUE THEME
+=================================== */
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #64748b;
+  --bg: #f1f6ff;
+  --card-bg: #ffffff;
+  --text-main: #0b1b35;
+  --text-muted: #64748b;
+  --border: #dbeafe;
+  --accent: #06b6d4;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 10%,
+      rgba(37, 99, 235, 0.08), transparent 30%),
+    radial-gradient(circle at 90% 40%,
+      rgba(6, 182, 212, 0.07), transparent 30%),
+    #f1f6ff;
+
+  color: var(--text-main);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(7, 27, 54, 0.96);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 4px 25px rgba(7, 27, 54, 0.15);
+}
+
+.logo {
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #38bdf8;
+}
+
+.creator-badge {
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+/* Hero Section */
+.hero {
+  padding: 65px 20px 40px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  background: linear-gradient(
+    90deg, #0b1b35, #2563eb, #06b6d4
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  line-height: 1.8;
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.94);
+  border: 1px solid #dbeafe;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(37,99,235,0.06);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 35px rgba(37,99,235,0.12);
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  color: #123b70;
+  font-weight: 750;
+}
+
+/* Input */
+.input-group input {
+  background: #f8fbff;
+  border: 1px solid #cbdcf5;
+  border-radius: 10px;
+  padding: 13px;
+  transition: 0.25s;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
+  background: #ffffff;
+}
+
+/* Buttons */
+button {
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #0891b2);
+  color: white;
+  box-shadow: 0 5px 15px rgba(37,99,235,0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37,99,235,0.3);
+}
+
+.btn-secondary {
+  background: #e8f1ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+/* Statistics */
+.stat-box {
+  background: linear-gradient(145deg, #eff6ff, #ffffff);
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+}
+
+.stat-value {
+  color: #2563eb;
+  font-size: 1.4rem;
+}
+
+.bar-track {
+  background: #dbeafe;
+  height: 11px;
+}
+
+.bar-fill {
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+  box-shadow: 0 0 10px rgba(6,182,212,0.3);
+}
+
+/* Major Cards */
+.major-card {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.major-card:hover {
+  transform: translateY(-5px);
+  border-color: #60a5fa;
+  box-shadow: 0 12px 28px rgba(37,99,235,0.12);
+}
+
+.major-card.top-match {
+  background: linear-gradient(145deg, #eff6ff, #ffffff);
+  border: 2px solid #06b6d4;
+}
+
+.match-badge {
+  background: linear-gradient(135deg, #2563eb, #0891b2);
+  border-radius: 20px;
+}
+
+.top-match .match-badge {
+  background: #0891b2;
+}
+
+/* Filter */
+.filter-btn {
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #2563eb, #0891b2);
+  border-color: transparent;
+}
+
+/* TKA Roadmap */
+.tka-item {
+  background: linear-gradient(145deg, #f8fbff, #eff6ff);
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.tka-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37,99,235,0.08);
+}
+
+.tka-item.priority-high {
+  border-left: 4px solid #2563eb;
+  background: #eff6ff;
+}
+
+/* Footer */
+footer {
+  background: #071b36;
+  color: #94a3b8;
+  border-top: 2px solid #2563eb;
+  padding: 30px 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    padding: 45px 10px 25px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .majors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+}
